@@ -1,5 +1,8 @@
 import React from 'react';
 import BigForm from './components/BigForm';
+import MyComponent from './components/Portal';
+import Context from './components/Portal';
+import WithToggle from './components/HOC';
 // import Counter from './components/Counter';
 // import Form from './components/Form';
 
@@ -24,6 +27,6 @@ import BigForm from './components/BigForm';
 // const App = () => <Title title="Test" />
 // const App = () => <Counter title="Counter: " />
 // const App = () => <Form />
-const App = () => <BigForm />
+const App: React.FC = () => <WithToggle primTitle="Main Title" secTitle="Additional Title" />
 
 export default App;
